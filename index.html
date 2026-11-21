@@ -1,243 +1,347 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sakshi's personal portfolio showcasing AI, technology, skills and projects.">
+    <meta name="description" content="Sakshi's personal portfolio - BTech AI/ML student, developer and creative thinker.">
     <title>Sakshi | AI/ML Student Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
 
-    <header class="site-header">
-        <nav class="navbar">
-            <a href="#home" class="logo">SAKSHI<span>.</span></a>
+<header class="site-header">
+    <nav class="navbar">
+        <a href="#home" class="logo">SAKSHI<span>.</span></a>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
 
-            <button id="theme-toggle" type="button">
-                <span class="light-label">☾ Dark</span>
-                <span class="dark-label">☀ Light</span>
-            </button>
-        </nav>
-    </header>
+        <button id="theme-toggle" type="button" aria-label="Toggle dark mode">
+            <span class="light-label">☾ Dark</span>
+            <span class="dark-label">☀ Light</span>
+        </button>
+    </nav>
+</header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <p class="eyebrow">BTECH AI/ML STUDENT</p>
+<main>
 
-                <h1>Hi, I'm Sakshi.<br>
-                    <span>Building ideas with technology.</span>
-                </h1>
+    <!-- HOME -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">BTECH AI/ML STUDENT</p>
 
-                <p class="hero-description">
-                    I'm a first-year AI/ML student exploring programming,
-                    artificial intelligence and creative problem-solving.
-                    I'm focused on learning, building projects and growing
-                    as a technology professional.
-                </p>
+            <h1>
+                Hi, I'm Sakshi.<br>
+                <span>Building ideas with technology.</span>
+            </h1>
 
-                <div class="hero-actions">
-                    <a href="#projects" class="button">Explore my work ↗</a>
-                    <a href="#about" class="secondary-link">More about me</a>
-                </div>
+            <p class="hero-description">
+                I'm a second-year Artificial Intelligence and Machine Learning
+                student exploring programming, artificial intelligence and
+                creative problem-solving. I enjoy turning ideas into practical
+                projects and continuously learning new technologies.
+            </p>
 
-                <div class="hero-meta">
-                    <span>01 / LEARN</span>
-                    <span>02 / BUILD</span>
-                    <span>03 / IMPROVE</span>
-                </div>
+            <div class="hero-actions">
+                <a href="#projects" class="button">Explore My Work ↗</a>
+                <a href="#about" class="secondary-link">More About Me</a>
             </div>
 
-            <div class="hero-visual">
-                <div class="visual-top">
-                    <span>PERSONAL PROFILE</span>
-                    <span class="status-dot"></span>
+            <div class="hero-meta">
+                <span>01 / LEARN</span>
+                <span>02 / BUILD</span>
+                <span>03 / IMPROVE</span>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="visual-top">
+                <span>PERSONAL PROFILE</span>
+                <span class="status-dot"></span>
+            </div>
+
+            <div class="code-window">
+                <div class="window-controls">
+                    <span></span><span></span><span></span>
                 </div>
 
-                <div class="code-window">
-                    <div class="window-controls">
-                        <span></span><span></span><span></span>
-                    </div>
-
-                    <pre><code><span class="code-purple">class</span> Sakshi:
+                <pre><code><span class="code-purple">class</span> Sakshi:
     role = <span class="code-green">"AI/ML Student"</span>
     mindset = <span class="code-green">"Always learning"</span>
 
     <span class="code-purple">def</span> build_future(self):
         <span class="code-blue">return</span> <span class="code-green">"Keep building."</span></code></pre>
+            </div>
+
+            <div class="visual-bottom">
+                <span>INTERESTS</span>
+                <p>AI · Software · Creative Technology</p>
+            </div>
+
+            <div class="visual-index">SK / 001</div>
+        </div>
+    </section>
+
+    <!-- QUICK INFO -->
+    <section class="quick-info">
+        <div>
+            <span class="info-number">01</span>
+            <p>AI & MACHINE LEARNING</p>
+        </div>
+        <div>
+            <span class="info-number">02</span>
+            <p>PROGRAMMING</p>
+        </div>
+        <div>
+            <span class="info-number">03</span>
+            <p>CREATIVE THINKING</p>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-section">
+        <div class="section-heading">
+            <span class="section-number">01 — ABOUT</span>
+            <h2>A little about me.</h2>
+        </div>
+
+        <div class="about-content">
+            <p>
+                I'm Sakshi, a first-year BTech AI/ML student at JECRC University,
+                Jaipur. I'm interested in understanding how technology works
+                and how it can solve real-world problems.
+            </p>
+
+            <p>
+                Alongside programming and artificial intelligence, I enjoy
+                painting, sketching and content creation. These interests
+                help me combine analytical thinking with creativity.
+            </p>
+
+            <p>
+                My current goal is to strengthen my technical fundamentals,
+                build practical projects, explore new technologies and
+                prepare for future internships.
+            </p>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section education-section">
+        <div class="section-heading">
+            <span class="section-number">02 — EDUCATION</span>
+            <h2>Academic background.</h2>
+            <p>My educational journey and current learning path.</p>
+        </div>
+
+        <div class="education-card">
+            <span class="card-tag">CURRENTLY PURSUING</span>
+            <h3>Bachelor of Technology</h3>
+            <h4>Artificial Intelligence & Machine Learning</h4>
+            <p>JECRC University, Jaipur</p>
+            <span class="education-year">First Year</span>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills-section">
+        <div class="section-heading">
+            <span class="section-number">03 — SKILLS</span>
+            <h2>Tools I'm learning.</h2>
+            <p>My current technical and creative toolkit.</p>
+        </div>
+
+        <div class="skills-grid">
+            <article class="skill-card">
+                <span class="skill-index">01</span>
+                <h3>Python</h3>
+                <p>Programming fundamentals and problem-solving.</p>
+            </article>
+
+            <article class="skill-card">
+                <span class="skill-index">02</span>
+                <h3>C / C++</h3>
+                <p>Core programming and object-oriented concepts.</p>
+            </article>
+
+            <article class="skill-card">
+                <span class="skill-index">03</span>
+                <h3>AI & Machine Learning</h3>
+                <p>Exploring intelligent systems and AI concepts.</p>
+            </article>
+
+            <article class="skill-card">
+                <span class="skill-index">04</span>
+                <h3>Web Development</h3>
+                <p>HTML, CSS and JavaScript fundamentals.</p>
+            </article>
+
+            <article class="skill-card">
+                <span class="skill-index">05</span>
+                <h3>Creative Thinking</h3>
+                <p>Visual design, sketching and content creation.</p>
+            </article>
+
+            <article class="skill-card">
+                <span class="skill-index">06</span>
+                <h3>Communication</h3>
+                <p>Presentations, collaboration and idea development.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects-section">
+        <div class="section-heading">
+            <span class="section-number">04 — PROJECTS</span>
+            <h2>Selected work.</h2>
+            <p>Projects and experiments from my learning journey.</p>
+        </div>
+
+        <div class="projects-grid">
+
+            <article class="project-card">
+                <div class="project-header">
+                    <span>PROJECT / 01</span>
+                    <span class="project-symbol">01</span>
                 </div>
 
-                <div class="visual-bottom">
-                    <span>INTERESTS</span>
-                    <p>AI · Software · Creative Technology</p>
+                <h3>Smart Expense AI</h3>
+
+                <p>
+                    An AI/ML portfolio project concept focused on expense
+                    tracking, spending analysis and understanding personal
+                    financial patterns.
+                </p>
+
+                <span class="project-status">Learning / Development</span>
+            </article>
+
+            <article class="project-card">
+                <div class="project-header">
+                    <span>PROJECT / 02</span>
+                    <span class="project-symbol">02</span>
                 </div>
 
-                <div class="visual-index">SK / 001</div>
-            </div>
-        </section>
-
-        <section class="quick-info">
-            <div>
-                <span class="info-number">01</span>
-                <p>AI & MACHINE LEARNING</p>
-            </div>
-            <div>
-                <span class="info-number">02</span>
-                <p>PROGRAMMING</p>
-            </div>
-            <div>
-                <span class="info-number">03</span>
-                <p>CREATIVE THINKING</p>
-            </div>
-        </section>
-
-        <section id="about" class="section about-section">
-            <div class="section-heading">
-                <span class="section-number">01 — ABOUT</span>
-                <h2>A little about me.</h2>
-            </div>
-
-            <div class="about-content">
-                <p>
-                    I'm Sakshi, a first-year BTech AI/ML student interested
-                    in understanding how technology works and how it can
-                    solve real-world problems.
-                </p>
+                <h3>Personal Portfolio Website</h3>
 
                 <p>
-                    Alongside programming and AI, I enjoy painting,
-                    sketching and content creation. These interests help
-                    me combine analytical thinking with creativity.
+                    A responsive personal website built using HTML, CSS
+                    and JavaScript to showcase my education, skills,
+                    projects and learning journey.
                 </p>
+
+                <a href="#home">Explore This Website ↗</a>
+            </article>
+
+            <article class="project-card">
+                <div class="project-header">
+                    <span>PROJECT / 03</span>
+                    <span class="project-symbol">03</span>
+                </div>
+
+                <h3>Resume Analyzer</h3>
 
                 <p>
-                    My current goal is to strengthen my fundamentals,
-                    build practical projects and prepare for future
-                    internships and opportunities.
+                    An AI-based project concept involving resume and job
+                    description comparison, skill matching and
+                    compatibility analysis.
                 </p>
-            </div>
-        </section>
 
-        <section id="skills" class="section skills-section">
-            <div class="section-heading">
-                <span class="section-number">02 — SKILLS</span>
-                <h2>Tools I'm learning.</h2>
-                <p>My current technical and creative toolkit.</p>
-            </div>
+                <span class="project-status">Project Exploration</span>
+            </article>
 
-            <div class="skills-grid">
-                <article class="skill-card">
-                    <span class="skill-index">01</span>
-                    <h3>Python</h3>
-                    <p>Programming fundamentals and problem-solving.</p>
-                </article>
+        </div>
+    </section>
 
-                <article class="skill-card">
-                    <span class="skill-index">02</span>
-                    <h3>C / C++</h3>
-                    <p>Core programming and object-oriented concepts.</p>
-                </article>
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
+        <div class="section-heading">
+            <span class="section-number">05 — CERTIFICATIONS</span>
+            <h2>Learning beyond classrooms.</h2>
+            <p>
+                Courses, training programs and certifications from my
+                learning journey.
+            </p>
+        </div>
 
-                <article class="skill-card">
-                    <span class="skill-index">03</span>
-                    <h3>AI & Machine Learning</h3>
-                    <p>Exploring intelligent systems and AI concepts.</p>
-                </article>
+        <div class="info-card">
+            <h3>Professional Learning</h3>
+            <p>
+                This section is reserved for my completed technical
+                courses, verified certifications and training programs.
+            </p>
+            <p class="muted-text">
+                Add your actual certificate names and issuing organizations here.
+            </p>
+        </div>
+    </section>
 
-                <article class="skill-card">
-                    <span class="skill-index">04</span>
-                    <h3>Web Development</h3>
-                    <p>HTML, CSS and JavaScript fundamentals.</p>
-                </article>
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section">
+        <div class="section-heading">
+            <span class="section-number">06 — ACHIEVEMENTS</span>
+            <h2>Experiences that shape me.</h2>
+        </div>
 
-                <article class="skill-card">
-                    <span class="skill-index">05</span>
-                    <h3>Creative Thinking</h3>
-                    <p>Visual design, sketching and content creation.</p>
-                </article>
+        <div class="info-card">
+            <h3>Learning, Collaboration & Innovation</h3>
+            <p>
+                Interested in hackathons, entrepreneurship activities,
+                technical presentations and collaborative projects.
+            </p>
+            <p class="muted-text">
+                Add your actual event participation, awards and achievements here.
+            </p>
+        </div>
+    </section>
 
-                <article class="skill-card">
-                    <span class="skill-index">06</span>
-                    <h3>Communication</h3>
-                    <p>Presentations, collaboration and idea development.</p>
-                </article>
-            </div>
-        </section>
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+        <span class="section-number">07 — GET IN TOUCH</span>
 
-        <section id="projects" class="section projects-section">
-            <div class="section-heading">
-                <span class="section-number">03 — PROJECTS</span>
-                <h2>Selected work.</h2>
-                <p>Projects, experiments and ideas I've worked on.</p>
-            </div>
+        <h2>Let's connect and build something.</h2>
 
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-header">
-                        <span>PROJECT / 01</span>
-                        <span class="project-symbol">01</span>
-                    </div>
-                    <h3>PLACEHOLDER — Project One</h3>
-                    <p>
-                        PLACEHOLDER — Describe the project, the problem
-                        it solves and the technologies you used.
-                    </p>
-                    <a href="PLACEHOLDER" target="_blank"
-                       rel="noopener noreferrer">View project ↗</a>
-                </article>
+        <p>
+            I'm always interested in learning, collaborating and
+            exploring new opportunities.
+        </p>
 
-                <article class="project-card">
-                    <div class="project-header">
-                        <span>PROJECT / 02</span>
-                        <span class="project-symbol">02</span>
-                    </div>
-                    <h3>PLACEHOLDER — Project Two</h3>
-                    <p>
-                        PLACEHOLDER — Explain what you built and
-                        the main skills you learned.
-                    </p>
-                    <a href="PLACEHOLDER" target="_blank"
-                       rel="noopener noreferrer">View project ↗</a>
-                </article>
+        <div class="contact-links">
+            <a href="mailto:YOUR_EMAIL@example.com" class="button">
+                Email Me ↗
+            </a>
 
-                <article class="project-card">
-                    <div class="project-header">
-                        <span>PROJECT / 03</span>
-                        <span class="project-symbol">03</span>
-                    </div>
-                    <h3>PLACEHOLDER — Project Three</h3>
-                    <p>
-                        PLACEHOLDER — Add a technical, academic
-                        or creative project to your portfolio.
-                    </p>
-                    <a href="PLACEHOLDER" target="_blank"
-                       rel="noopener noreferrer">View project ↗</a>
-                </article>
-            </div>
-        </section>
+            <a href="YOUR_LINKEDIN_URL" target="_blank"
+               rel="noopener noreferrer" class="secondary-link">
+                LinkedIn ↗
+            </a>
 
-        <section class="contact-section">
-            <span class="section-number">04 — WHAT'S NEXT?</span>
-            <h2>Curious about what I can build next.</h2>
-            <p>I'm learning, experimenting and turning ideas into projects.</p>
-            <a href="mailto:PLACEHOLDER" class="button">Get in touch ↗</a>
-        </section>
-    </main>
+            <a href="YOUR_GITHUB_URL" target="_blank"
+               rel="noopener noreferrer" class="secondary-link">
+                GitHub ↗
+            </a>
+        </div>
+    </section>
 
-    <footer class="site-footer">
-        <a href="#home" class="logo">SAKSHI<span>.</span></a>
-        <p>Learning today. Building for tomorrow.</p>
-        <p>© 2026 Sakshi</p>
-    </footer>
+</main>
+
+<footer class="site-footer">
+    <a href="#home" class="logo">SAKSHI<span>.</span></a>
+    <p>Learning today. Building for tomorrow.</p>
+    <p>© 2026 Sakshi</p>
+</footer>
 
 </body>
 </html>

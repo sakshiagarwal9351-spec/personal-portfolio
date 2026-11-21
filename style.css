@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
@@ -21,7 +22,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 95px;
+    scroll-padding-top: 100px;
 }
 
 body {
@@ -48,10 +49,16 @@ a {
     color: inherit;
 }
 
+button {
+    font-family: inherit;
+}
+
+/* NAVIGATION */
+
 .site-header {
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 100;
     background: var(--surface);
     border-bottom: 1px solid var(--border);
 }
@@ -64,7 +71,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 25px;
+    gap: 20px;
 }
 
 .logo {
@@ -72,6 +79,7 @@ a {
     font: 800 1.5rem 'Manrope', sans-serif;
     letter-spacing: -1px;
     text-decoration: none;
+    flex-shrink: 0;
 }
 
 .logo span {
@@ -80,13 +88,15 @@ a {
 
 .nav-links {
     display: flex;
-    gap: 30px;
+    align-items: center;
+    gap: 20px;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .nav-links a {
     color: var(--muted);
-    font-size: 0.9rem;
+    font-size: 0.83rem;
     text-decoration: none;
     transition: color 0.2s;
 }
@@ -103,6 +113,7 @@ a {
     color: var(--text);
     font: 600 0.85rem 'DM Sans', sans-serif;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 #theme-toggle:hover {
@@ -121,7 +132,7 @@ body.dark .dark-label {
     display: inline;
 }
 
-/* Hero */
+/* HERO */
 
 .hero {
     max-width: 1180px;
@@ -163,7 +174,8 @@ body.dark .dark-label {
     margin-bottom: 30px;
 }
 
-.hero-actions {
+.hero-actions,
+.contact-links {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -181,6 +193,7 @@ body.dark .dark-label {
     font-weight: 600;
     text-decoration: none;
     transition: background 0.2s, transform 0.2s;
+    cursor: pointer;
 }
 
 body.dark .button {
@@ -220,7 +233,7 @@ body.dark .button {
     letter-spacing: 1px;
 }
 
-/* Technical visual */
+/* CODE WINDOW */
 
 .hero-visual {
     position: relative;
@@ -336,7 +349,7 @@ body.dark .code-blue {
     font-weight: 700;
 }
 
-/* Quick info strip */
+/* QUICK INFO */
 
 .quick-info {
     display: grid;
@@ -370,7 +383,7 @@ body.dark .code-blue {
     letter-spacing: 0.5px;
 }
 
-/* Common sections */
+/* COMMON SECTIONS */
 
 .section {
     max-width: 1124px;
@@ -395,7 +408,7 @@ body.dark .code-blue {
     font-size: 0.95rem;
 }
 
-/* About */
+/* ABOUT */
 
 .about-section {
     display: grid;
@@ -413,7 +426,63 @@ body.dark .code-blue {
     color: var(--muted);
 }
 
-/* Skills */
+/* EDUCATION */
+
+.education-section {
+    border-bottom: 1px solid var(--border);
+}
+
+.education-card,
+.info-card {
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+}
+
+.card-tag {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: var(--accent);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.education-card h3,
+.info-card h3 {
+    font: 700 1.3rem 'Manrope', sans-serif;
+    margin-bottom: 8px;
+}
+
+.education-card h4 {
+    color: var(--accent);
+    margin-bottom: 8px;
+}
+
+.education-card p,
+.info-card p {
+    color: var(--muted);
+    margin-top: 7px;
+}
+
+.education-year {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 12px;
+    border-radius: 5px;
+    background: var(--surface-alt);
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.muted-text {
+    font-size: 0.85rem;
+}
+
+/* SKILLS */
 
 .skills-section {
     border-bottom: 1px solid var(--border);
@@ -456,7 +525,11 @@ body.dark .code-blue {
     font-size: 0.86rem;
 }
 
-/* Projects */
+/* PROJECTS */
+
+.projects-section {
+    border-bottom: 1px solid var(--border);
+}
 
 .projects-grid {
     display: grid;
@@ -534,7 +607,16 @@ body.dark .project-symbol {
     text-decoration: underline;
 }
 
-/* Contact */
+.project-status {
+    padding: 6px 10px;
+    background: var(--surface-alt);
+    color: var(--accent);
+    font-size: 0.76rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+/* CONTACT */
 
 .contact-section {
     padding: 65px 25px;
@@ -554,7 +636,11 @@ body.dark .project-symbol {
     color: var(--muted);
 }
 
-/* Footer */
+.contact-links {
+    justify-content: center;
+}
+
+/* FOOTER */
 
 .site-footer {
     max-width: 1180px;
@@ -572,22 +658,124 @@ body.dark .project-symbol {
     font-size: 0.8rem;
 }
 
-/* Responsive layout */
+/* QUIZ */
 
-@media (max-width: 850px) {
+.quiz-section {
+    min-height: 70vh;
+}
+
+.quiz-container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+}
+
+.quiz-progress {
+    width: 100%;
+    height: 7px;
+    margin: 15px 0 25px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: var(--surface-alt);
+}
+
+.quiz-progress-bar {
+    width: 20%;
+    height: 100%;
+    background: var(--accent);
+    transition: width 0.3s;
+}
+
+.quiz-question {
+    margin-bottom: 22px;
+    font: 700 1.35rem 'Manrope', sans-serif;
+}
+
+.quiz-option {
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+    padding: 14px;
+    text-align: left;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    background: var(--surface);
+    color: var(--text);
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.quiz-option:hover:not(:disabled) {
+    border-color: var(--accent);
+    background: var(--surface-alt);
+}
+
+.quiz-option:disabled {
+    cursor: default;
+}
+
+.quiz-option.correct {
+    border-color: #16a34a;
+    background: rgba(22, 163, 74, 0.10);
+}
+
+.quiz-option.incorrect {
+    border-color: #dc4444;
+    background: rgba(220, 68, 68, 0.10);
+}
+
+.quiz-feedback {
+    min-height: 30px;
+    margin: 18px 0;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.quiz-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.quiz-result {
+    text-align: center;
+}
+
+.quiz-result h2 {
+    margin-bottom: 15px;
+}
+
+.quiz-result .result-score {
+    color: var(--accent);
+    font: 800 3rem 'Manrope', sans-serif;
+    margin: 15px 0;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1000px) {
     .navbar {
         flex-wrap: wrap;
-        gap: 16px;
     }
 
     .nav-links {
         order: 3;
         width: 100%;
         justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
     }
+}
 
+@media (max-width: 850px) {
     .hero {
         grid-template-columns: 1fr;
         gap: 45px;
@@ -641,11 +829,11 @@ body.dark .project-symbol {
     }
 
     .nav-links {
-        gap: 18px;
+        gap: 15px;
     }
 
     .nav-links a {
-        font-size: 0.82rem;
+        font-size: 0.78rem;
     }
 
     .hero {
@@ -700,5 +888,9 @@ body.dark .project-symbol {
     .site-footer {
         flex-direction: column;
         text-align: center;
+    }
+
+    .quiz-container {
+        padding: 20px;
     }
 }
